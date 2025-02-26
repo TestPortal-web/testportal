@@ -9,7 +9,6 @@
     <style>
         body {
             display: flex;
-			margin: auto;
             justify-content: center;
 			align-items: center;
             height: 140vh;
@@ -44,9 +43,11 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         .container {
-            margin-top: 80px;
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-between;
             align-items: center;
             gap: 10px;
         }
@@ -54,10 +55,10 @@
 </head>
 <body>
     <header>
-        <input type="text" id="filterInput" placeholder="Filter buttons by name" onkeyup="filterButtons()" style="padding: 10px; font-size: 20px; width: 80%; max-width: 400px;">
+        <input type="text" id="filterInput" placeholder="Type Aireline Name" onkeyup="filterButtons()" style="padding: 10px; font-size: 20px; width: 80%; max-width: 400px;">
     </header>
     <div class="container">
-        <a href="https://mybag-demo.aero/baggage/#/pax/virginatlantic/en-gb/main-menu" class="button" target="_blank">VirginAtlantic</a>
+    <a href="https://mybag-demo.aero/baggage/#/pax/virginatlantic/en-gb/main-menu" class="button" target="_blank">VirginAtlantic</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/alaska/en-gb/main-menu" class="button" target="_blank">Alaska</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/westjet/en-ca/main-menu" class="button" target="_blank">WestJet</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/lufthansa/en-gb/main-menu" class="button" target="_blank">Lufthansa</a>
