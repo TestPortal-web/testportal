@@ -35,7 +35,8 @@
         }
     </style>
 </head>
-    <input type="text" id="filterInput" placeholder="Type Airline Name" onkeyup="filterButtons()" style="padding: 10px; font-size: 20px; margin-bottom: 20px;">
+<header>
+<input type="text" id="filterInput" placeholder="Type Airline Name" onkeyup="filterButtons()" style="padding: 10px; font-size: 20px; margin-bottom: 20px;">
     <script>
         function filterButtons() {
             let input = document.getElementById('filterInput').value.toLowerCase();
@@ -49,6 +50,10 @@
             });
         }
     </script>
+</header>
+ <body>
+
+    
     <a href="https://mybag-demo.aero/baggage/#/pax/virginatlantic/en-gb/main-menu" class="button" target="_blank">VirginAtlantic</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/alaska/en-gb/main-menu" class="button" target="_blank">Alaska</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/westjet/en-ca/main-menu" class="button" target="_blank">WestJet</a>
