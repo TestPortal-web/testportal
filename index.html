@@ -35,7 +35,20 @@
         }
     </style>
 </head>
-<body>
+    <input type="text" id="filterInput" placeholder="Filter buttons by name" onkeyup="filterButtons()" style="padding: 10px; font-size: 20px; margin-bottom: 20px;">
+    <script>
+        function filterButtons() {
+            let input = document.getElementById('filterInput').value.toLowerCase();
+            let buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                if (button.textContent.toLowerCase().includes(input)) {
+                    button.style.display = '';
+                } else {
+                    button.style.display = 'none';
+                }
+            });
+        }
+    </script>
     <a href="https://mybag-demo.aero/baggage/#/pax/virginatlantic/en-gb/main-menu" class="button" target="_blank">VirginAtlantic</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/alaska/en-gb/main-menu" class="button" target="_blank">Alaska</a>
     <a href="https://mybag-demo.aero/baggage/#/pax/westjet/en-ca/main-menu" class="button" target="_blank">WestJet</a>
